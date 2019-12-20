@@ -1,70 +1,68 @@
 <html>
-<body>
+  <body>
 
-<!-- HTML Section -->
+    <!-- HTML Section -->
+    <h1>Financial Data</h1>
+     <form>
+      <label>First Name</label>
+      <input type="text" id="first">
+      <br>
+      <label>Last Name</label>
+      <input type="text" id="last">
+      <br>
+      <label>Bank Code</label>
+      <input type="text" id="code">
+      <br><br>
+      <input type="button" value="Send Data" class="button" onclick="dataProcess();">
+    </form>
 
-<h1>Financial Data</h1>
+    <br>
+    <br>
+    <br>
 
-<form>
-  <label>First Name</label>
-  <input type="text" id="first">
-  <br>
-  <label>Last Name</label>
-  <input type="text" id="last">
-  <br>
-  <label>Bank Code</label>
-  <input type="text" id="code">
-  <br><br>
-  <input type="button" value="Send Data" class="button" onclick="dataProcess();">
-</form>
+    <div id="cont"></div>
 
-<br>
-<br>
-<br>
+    <!-- CSS Section -->
 
-<div id="cont"></div>
+    <style>
 
-<!-- CSS Section -->
+    h1, form {
+      color: white;
+      text-align: center;
+    }
 
-<style>
+    input.button {
+      font-size: 25.5px;
+      font-family: Arial, Helvetica, sans-serif;
+      letter-spacing: -1px;
+      border-radius: 3.5px;
+      border: green solid 4px;
+    }
 
-h1, form {
-  color: white;
-  text-align: center;
-}
+    #cont {
+      text-align: center;
+      color: white;
+    }
 
-input.button {
-  font-size: 25.5px;
-  font-family: Arial, Helvetica, sans-serif;
-  letter-spacing: -1px;
-  border-radius: 3.5px;
-  border: green solid 4px;
-}
+    </style>
 
-#cont {
-  text-align: center;
-  color: white;
-}
+    <!-- JavaScript Section -->
 
-</style>
+    <script>
 
-<!-- JavaScript Section -->
+    function dataProcess() {
 
-<script>
+      var getFirstName = document.getElementById('first').value;
+      var getLastName = document.getElementById('last').value;
+      var getBankCode = document.getElementById('code').value;
 
-function dataProcess() {
+      /*
+      console.log("Description " + "<br>" + "First Name: " + getFirstName + "<br>" + "Last Name: " + "<br>" + "Bank Code: " + getBankCode);
+      */
 
-  var getFirstName = document.getElementById('first').value;
-  var getLastName = document.getElementById('last').value;
-  var getBankCode = document.getElementById('code').value;
+      document.getElementById('cont').innerHTML = "Description " + "<br>" + "First Name: " + getFirstName + "<br>" + "Last Name: " + getLastName + "<br>" + "Bank Code: " + getBankCode;
+    }
 
-  /*
-  console.log("Description " + "<br>" + "First Name: " + getFirstName + "<br>" + "Last Name: " + "<br>" + "Bank Code: " + getBankCode);
-  */
-
-  document.getElementById('cont').innerHTML = "Description " + "<br>" + "First Name: " + getFirstName + "<br>" + "Last Name: " + getLastName + "<br>" + "Bank Code: " + getBankCode;
-}
-
-</script>
-</body>
+    </script>
+  </body>
 </html>
