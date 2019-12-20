@@ -1,4 +1,4 @@
-    alert("¡La vinculación resultó exitosa!");
+    console.log("¡La vinculación resultó exitosa!");
     function dataProcess() {
 
       var getFirstName = document.getElementById('first').value;
