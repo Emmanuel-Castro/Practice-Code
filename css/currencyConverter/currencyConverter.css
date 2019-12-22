@@ -2,6 +2,7 @@ body {
     background-color: black;
     letter-spacing: -1px;
     width: 100%;
+    font-family: 'Pompiere', cursive;
 }
 
 form {
