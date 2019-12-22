@@ -1,0 +1,77 @@
+body {
+    background-color: black;
+    letter-spacing: -1px;
+    width: 100%;
+}
+
+form {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    border: 5px solid white;
+    border-radius: 5px;
+}
+
+h1 {
+    color: white;
+    font-family: "Arial";
+    text-align: center;
+    margin: 30.5px
+}
+
+div.cont1 {
+    margin: 20px
+}
+
+div.cont2 {
+    margin: 20px;
+    margin-top: 30px;
+}
+
+#resultCont {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    margin: 45px;
+}
+
+label {
+    color: black;
+    font-weight: bold;
+    margin: 40px;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+}
+
+#quantity {
+    font-size: 25px;    
+    border-radius: 4px;
+    border: none; 
+    margin-left: -5px;
+}
+
+#currency {
+    font-size: 20.5px;
+    font-family: "Verdana";
+    letter-spacing: -1px;
+    border-radius: 4px;
+    border: none; 
+}
+
+#button {
+    background-color: rgb(129, 129, 129);
+    color: white;
+    border: 5px black solid;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 30px;
+    font-family: "Verdana";
+    font-size: 20px;
+    font-style: bold;
+    letter-spacing: -1px;
+}
+
+#button:hover {
+    background-color: white;
+    color: black;
+}
