@@ -2,6 +2,7 @@ body {
     background-color: black;
     letter-spacing: -1px;
     width: 100%;
+    font-family: Arial, sans-serif;
 }
 
 form {
@@ -12,21 +13,21 @@ form {
     border-radius: 5px;
 }
 
+form p{
+    font-size: 20px;
+}
+
 h1 {
     color: white;
-    font-family: "Arial";
     text-align: center;
     margin: 30.5px
 }
 
-div.cont1 {
-    margin: 20px
+.container{
+    width:95%;
+    margin: auto;
 }
 
-div.cont2 {
-    margin: 20px;
-    margin-top: 30px;
-}
 
 #resultCont {
     color: white;
@@ -35,27 +36,22 @@ div.cont2 {
     margin: 45px;
 }
 
-label {
-    color: black;
-    font-weight: bold;
-    margin: 40px;
-    font-size: 20px;
-    letter-spacing: 0.5px;
-}
-
 #quantity {
     font-size: 25px;    
     border-radius: 4px;
-    border: none; 
-    margin-left: -5px;
+    border: none;
+    margin:0px;
+    width: 40%;
 }
 
-#currency {
+#curr1, #curr2{
     font-size: 20.5px;
+    width: 40%;
     font-family: "Verdana";
     letter-spacing: -1px;
     border-radius: 4px;
     border: none; 
+    margin:0px;
 }
 
 #button {
@@ -69,6 +65,8 @@ label {
     font-size: 20px;
     font-style: bold;
     letter-spacing: -1px;
+    transition-property: background-color,color;
+    transition-duration: .5s;
 }
 
 #button:hover {
