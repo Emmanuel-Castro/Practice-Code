@@ -1,4 +1,22 @@
-function convProcess() {
+var curr1 = document.getElementById("curr1");
+var curr2 = document.getElementById("curr2");
+var quantity = document.getElementById("quantity");
+
+
+function convert(quant, curr1, curr2){
+    var values = {USD:1.00, EUR:0.91, JPY:106.95, GBP:0.81, AUD:1.47, CAD:1.32, CHF:0.99, CHY:7.15, 
+        NZD:1.57, RUB:66.23, INR:71.87, BRL:4.10, ZAR:14.89, HKD:7.84, NOK:9.01};
+    return (quant/values[curr1])*values[curr2];
+}
+
+
+function calculate() {
+    var result = convert(quantity.value, curr1.value, curr2.value).toFixed(2);
+    var total = quantity.value + curr1.value + " equals to " + result + curr2.value;
+    document.getElementById('resultCont').innerHTML = total;
+}
+
+/* function convProcess() {
         
         var americanDollar = document.getElementById('quantity').value; 
         var currency = document.getElementById('currency').value; 
@@ -91,3 +109,4 @@ function convProcess() {
         
         document.getElementById('resultCont').innerHTML = total;
     }
+*/
